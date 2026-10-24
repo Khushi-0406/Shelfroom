@@ -1,0 +1,285 @@
+.tags-section {
+  margin-top: 35px;
+  padding: 28px;
+
+  background: #faf7f0;
+  border: 1px solid #ddd4c5;
+  border-radius: 10px;
+}
+
+
+/* HEADER */
+
+.tags-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tags-header h2 {
+  margin: 7px 0 0;
+
+  color: #203c32;
+
+  font-family: Georgia, serif;
+  font-size: 29px;
+}
+
+.tags-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag-count {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #203c32;
+  color: white;
+
+  font-size: 12px;
+}
+
+.edit-tags-btn {
+  padding: 8px 15px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #203c32;
+  color: white;
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.edit-tags-btn:hover {
+  background: #294d40;
+}
+
+
+/* CURRENT TAGS */
+
+.book-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  margin-top: 22px;
+}
+
+.book-tag {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  border-radius: 20px;
+
+  background: #e8dfd0;
+  color: #203c32;
+
+  font-size: 12px;
+}
+
+.book-tag button {
+  width: 18px;
+  height: 18px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #777;
+
+  font-size: 15px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.book-tag button:hover {
+  color: #a33;
+}
+
+
+/* EMPTY */
+
+.tags-empty {
+  margin-top: 20px;
+
+  color: #777;
+  font-size: 13px;
+}
+
+
+/* CREATE */
+
+.tag-create-form {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+.tag-create-form input {
+  flex: 1;
+
+  padding: 11px 13px;
+
+  border: 1px solid #d4cbbb;
+  border-radius: 6px;
+
+  background: white;
+
+  outline: none;
+
+  font-size: 13px;
+}
+
+.tag-create-form input:focus {
+  border-color: #203c32;
+}
+
+.tag-create-form button {
+  padding: 10px 17px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #203c32;
+  color: white;
+
+  cursor: pointer;
+}
+
+.tag-create-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* AVAILABLE */
+
+.available-tags {
+  margin-top: 25px;
+}
+
+.available-tags .eyebrow {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.available-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.available-tag {
+  padding: 7px 12px;
+
+  border: 1px solid #d4cbbb;
+  border-radius: 20px;
+
+  background: white;
+  color: #203c32;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.available-tag:hover {
+  background: #e8dfd0;
+}
+
+.available-tag.added {
+  background: #203c32;
+  color: white;
+
+  cursor: default;
+}
+
+
+/* EDIT ACTIONS */
+
+.tags-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 22px;
+}
+
+.tags-cancel-btn {
+  padding: 9px 17px;
+
+  border: 1px solid #d4cbbb;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #555;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.tags-cancel-btn:hover {
+  background: #eee9df;
+}
+
+
+/* ERROR */
+
+.tags-section .form-error {
+  margin-top: 14px;
+
+  color: #a33;
+  font-size: 13px;
+}
+
+
+/* EYEBROW */
+
+.tags-section .eyebrow {
+  display: block;
+
+  color: #a66a22;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .tags-section {
+    padding: 20px;
+  }
+
+  .tags-header h2 {
+    font-size: 26px;
+  }
+
+  .tag-create-form {
+    flex-direction: column;
+  }
+
+  .tag-create-form button {
+    align-self: flex-start;
+  }
+}

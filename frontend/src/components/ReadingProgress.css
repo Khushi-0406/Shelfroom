@@ -1,0 +1,336 @@
+/* =========================================
+   READING PROGRESS
+========================================= */
+
+.reading-progress-section {
+  margin-top: 28px;
+  padding: 28px 30px;
+
+  background: #faf7f0;
+
+  border: 1px solid #ddd4c5;
+  border-radius: 8px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.reading-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 22px;
+}
+
+.reading-progress-header h2 {
+  margin: 6px 0 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  color: #203c32;
+}
+
+
+/* =========================================
+   HEADER BUTTONS
+========================================= */
+
+.edit-progress-btn,
+.add-progress-btn {
+  min-height: 34px;
+
+  padding: 0 15px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #203c32;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.edit-progress-btn:hover,
+.add-progress-btn:hover {
+  background: #294d40;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.progress-empty {
+  padding-top: 2px;
+}
+
+.progress-empty p {
+  margin: 0 0 12px;
+
+  color: #777064;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   PROGRESS CONTENT
+========================================= */
+
+.progress-content {
+  margin-top: 4px;
+}
+
+.progress-info {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 11px;
+
+  color: #444;
+
+  font-size: 13px;
+}
+
+.progress-info strong:first-child {
+  color: #303b35;
+}
+
+.progress-info strong:last-child {
+  margin-left: auto;
+
+  color: #a66a22;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+
+  background: #e2dbcf;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+
+  background: #d5a33f;
+
+  border-radius: 10px;
+
+  transition: width 0.3s ease;
+}
+
+
+/* =========================================
+   EDIT FORM
+========================================= */
+
+.progress-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.progress-form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  color: #405048;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.progress-form input {
+  width: 100%;
+
+  padding: 10px 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d4cbbb;
+  border-radius: 6px;
+
+  background: white;
+
+  color: #333;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  outline: none;
+}
+
+.progress-form input:focus {
+  border-color: #203c32;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.progress-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  margin-top: 3px;
+}
+
+.progress-actions button {
+  min-height: 36px;
+
+  padding: 0 15px;
+
+  border: none;
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.progress-actions button:first-child {
+  background: #e8e1d5;
+  color: #444;
+}
+
+.progress-actions button:first-child:hover {
+  background: #ddd5c8;
+}
+
+.progress-actions button:last-child {
+  background: #203c32;
+  color: white;
+}
+
+.progress-actions button:last-child:hover {
+  background: #294d40;
+}
+
+.progress-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.reading-progress-section .form-error {
+  margin: 3px 0;
+
+  color: #a34c43;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .reading-progress-section {
+    margin-top: 20px;
+
+    padding: 22px 18px;
+
+    border-radius: 8px;
+  }
+
+  .reading-progress-header {
+    margin-bottom: 19px;
+  }
+
+  .reading-progress-header h2 {
+    font-size: 26px;
+  }
+
+  .edit-progress-btn,
+  .add-progress-btn {
+    min-height: 32px;
+
+    padding: 0 12px;
+
+    font-size: 11px;
+  }
+
+  .progress-info {
+    font-size: 12px;
+  }
+
+  .progress-bar {
+    height: 8px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+  .reading-progress-section {
+    padding: 20px 15px;
+  }
+
+  .reading-progress-header h2 {
+    font-size: 24px;
+  }
+
+  .progress-info {
+    font-size: 11px;
+  }
+
+  .edit-progress-btn,
+  .add-progress-btn {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .progress-actions {
+    flex-direction: column-reverse;
+  }
+
+  .progress-actions button {
+    width: 100%;
+  }
+}

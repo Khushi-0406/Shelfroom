@@ -1,0 +1,1057 @@
+/* =========================================
+   BOOK DETAILS PAGE
+========================================= */
+
+.book-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 42px 40px 80px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  margin: 0 0 28px;
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #777064;
+  font-size: 13px;
+
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #203c32;
+}
+
+
+/* =========================================
+   BOOK HERO
+========================================= */
+
+.book-details-content {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 48px;
+
+  padding: 34px;
+
+  background: #fbf8f1;
+  border: 1px solid #ddd4c5;
+  border-radius: 14px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 8px 24px rgba(32, 60, 50, 0.035);
+}
+
+
+/* =========================================
+   COVER
+========================================= */
+
+.details-cover {
+  width: 280px;
+}
+
+.details-cover img,
+.details-placeholder {
+  width: 280px;
+  height: 420px;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 14px 30px rgba(32, 60, 50, 0.14);
+}
+
+.details-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #36536a;
+  color: white;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 80px;
+}
+
+
+/* =========================================
+   COVER UPLOAD
+========================================= */
+
+.cover-upload-btn {
+  display: block;
+
+  margin-top: 13px;
+  padding: 10px 12px;
+
+  text-align: center;
+
+  border: 1px solid #d4cbbb;
+  border-radius: 7px;
+
+  background: transparent;
+  color: #405048;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.cover-upload-btn:hover {
+  background: #f1ece3;
+  border-color: #203c32;
+  color: #203c32;
+}
+
+
+/* =========================================
+   BOOK INFO
+========================================= */
+
+.details-info {
+  min-width: 0;
+  padding-top: 6px;
+}
+
+.details-info > .eyebrow {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.details-info h1 {
+  max-width: 700px;
+
+  margin: 0 0 9px;
+
+  color: #203c32;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 500;
+
+  line-height: 1.08;
+  letter-spacing: -1px;
+
+  overflow-wrap: anywhere;
+}
+
+.details-info h3 {
+  margin: 0;
+
+  color: #777d78;
+
+  font-size: 17px;
+  font-weight: 400;
+}
+
+
+/* =========================================
+   META
+========================================= */
+
+.details-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+
+  margin-top: 22px;
+}
+
+.details-meta span,
+.details-meta strong {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 30px;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+
+  border-radius: 20px;
+
+  background: #eee8dc;
+  color: #8e642f;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.details-meta strong {
+  background: #f2e4c7;
+  color: #a66a22;
+}
+
+
+/* =========================================
+   REVIEW
+========================================= */
+
+.details-section {
+  max-width: 720px;
+
+  margin-top: 30px;
+  padding-top: 24px;
+
+  border-top: 1px solid #e2dacf;
+}
+
+.details-section .eyebrow {
+  display: block;
+}
+
+.details-section p {
+  margin: 11px 0 0;
+
+  color: #555d57;
+
+  font-size: 14px;
+  line-height: 1.85;
+
+  white-space: pre-wrap;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.book-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  margin-top: 28px;
+}
+
+.edit-btn,
+.delete-btn {
+  min-height: 38px;
+
+  padding: 0 16px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.edit-btn {
+  border: 1px solid #203c32;
+
+  background: #203c32;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #294d40;
+  border-color: #294d40;
+}
+
+.delete-btn {
+  border: 1px solid #c9aaa5;
+
+  background: transparent;
+  color: #a34c43;
+}
+
+.delete-btn:hover {
+  background: #fff5f3;
+  border-color: #a34c43;
+}
+
+
+/* =========================================
+   PDF SECTION
+========================================= */
+
+.pdf-section {
+  margin-top: 26px;
+  padding-top: 22px;
+
+  border-top: 1px solid #e2dacf;
+}
+
+.pdf-section > .eyebrow {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.pdf-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pdf-actions span {
+  color: #69716b;
+  font-size: 12px;
+}
+
+.pdf-upload-btn,
+.read-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 37px;
+
+  padding: 0 15px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #203c32;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.pdf-upload-btn:hover,
+.read-btn:hover {
+  background: #294d40;
+}
+
+
+/* =========================================
+   EDIT BOOK FORM
+========================================= */
+
+.edit-book-form {
+  max-width: 720px;
+
+  margin: 10px auto 0;
+  padding: 35px;
+
+  background: #fbf8f1;
+  border: 1px solid #ddd4c5;
+  border-radius: 14px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 8px 24px rgba(32, 60, 50, 0.035);
+}
+
+.details-header {
+  margin-bottom: 27px;
+}
+
+.details-header .eyebrow {
+  display: block;
+}
+
+.details-header h1 {
+  margin: 7px 0 0;
+
+  color: #203c32;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+
+/* FORM */
+
+.edit-book-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.edit-book-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: #405048;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.edit-book-form input,
+.edit-book-form select,
+.edit-book-form textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d8d0c2;
+  border-radius: 7px;
+
+  background: white;
+  color: #333;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  outline: none;
+
+  transition: border-color 0.2s ease;
+}
+
+.edit-book-form input:focus,
+.edit-book-form select:focus,
+.edit-book-form textarea:focus {
+  border-color: #203c32;
+}
+
+.edit-book-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+
+/* =========================================
+   EDIT ACTIONS
+========================================= */
+
+.edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+
+  margin-top: 10px;
+}
+
+.save-btn,
+.cancel-btn {
+  min-height: 38px;
+
+  padding: 0 17px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.save-btn {
+  border: 1px solid #203c32;
+
+  background: #203c32;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #294d40;
+}
+
+.save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  border: 1px solid #d0c7b9;
+
+  background: transparent;
+  color: #555d57;
+}
+
+.cancel-btn:hover {
+  background: #f1ece3;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.form-error {
+  margin: 5px 0;
+
+  color: #a34c43;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   LOWER SECTIONS
+========================================= */
+
+.book-details > section:not(.book-details-content) {
+  margin-top: 28px;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.book-details > main {
+  color: #555d57;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .book-details {
+    padding: 32px 25px 65px;
+  }
+
+  .book-details-content {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 30px;
+
+    padding: 27px;
+  }
+
+  .details-cover {
+    width: 220px;
+  }
+
+  .details-cover img,
+  .details-placeholder {
+    width: 220px;
+    height: 335px;
+  }
+
+  .details-info h1 {
+    font-size: 39px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .book-details {
+    padding: 27px 18px 50px;
+  }
+
+  .back-button {
+    margin-bottom: 20px;
+  }
+
+  .book-details-content {
+    grid-template-columns: 1fr;
+    gap: 27px;
+
+    padding: 22px;
+  }
+
+  .details-cover {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .details-cover img,
+  .details-placeholder {
+    width: 260px;
+    height: 390px;
+  }
+
+  .details-info {
+    padding-top: 0;
+  }
+
+  .details-info h1 {
+    font-size: 34px;
+    letter-spacing: -0.5px;
+  }
+
+  .details-info h3 {
+    font-size: 16px;
+  }
+
+  .details-meta {
+    margin-top: 18px;
+  }
+
+  .book-actions {
+    margin-top: 23px;
+  }
+
+  .pdf-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-book-form {
+    padding: 25px 20px;
+  }
+
+  .details-header h1 {
+    font-size: 32px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+  .details-cover {
+    max-width: 220px;
+  }
+
+  .details-cover img,
+  .details-placeholder {
+    width: 220px;
+    height: 330px;
+  }
+
+  .details-info h1 {
+    font-size: 30px;
+  }
+
+  .book-details-content {
+    padding: 18px;
+  }
+
+  .edit-book-form {
+    padding: 22px 17px;
+  }
+
+  .edit-actions {
+    flex-direction: column-reverse;
+  }
+
+  .save-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .book-details {
+    padding: 32px 25px 65px;
+  }
+
+  .book-details-content {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 30px;
+    padding: 27px;
+  }
+
+  .details-cover {
+    width: 220px;
+  }
+
+  .details-cover img,
+  .details-placeholder {
+    width: 220px;
+    height: 335px;
+  }
+
+  .details-info h1 {
+    font-size: 39px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .book-details {
+    width: 100%;
+    padding: 22px 14px 45px;
+    box-sizing: border-box;
+  }
+
+
+  /* BACK */
+
+  .back-button {
+    margin-bottom: 18px;
+    font-size: 12px;
+  }
+
+
+  /* =====================================
+     BOOK HERO
+  ===================================== */
+
+  .book-details-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    padding: 20px 18px;
+
+    border-radius: 11px;
+  }
+
+
+  /* =====================================
+     COVER
+  ===================================== */
+
+  .details-cover {
+    width: 100%;
+    max-width: 220px;
+
+    margin: 0 auto;
+  }
+
+  .details-cover img,
+  .details-placeholder {
+    width: 220px;
+    height: 330px;
+
+    margin: 0 auto;
+
+    border-radius: 8px;
+  }
+
+  .details-placeholder {
+    font-size: 65px;
+  }
+
+
+  /* COVER BUTTON */
+
+  .cover-upload-btn {
+    margin-top: 10px;
+    padding: 9px;
+
+    font-size: 11px;
+  }
+
+
+  /* =====================================
+     BOOK INFO
+  ===================================== */
+
+  .details-info {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .details-info > .eyebrow {
+    margin-bottom: 7px;
+
+    font-size: 9px;
+    letter-spacing: 2.5px;
+  }
+
+  .details-info h1 {
+    margin: 0 0 7px;
+
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.4px;
+  }
+
+  .details-info h3 {
+    font-size: 15px;
+  }
+
+
+  /* =====================================
+     META
+  ===================================== */
+
+  .details-meta {
+    gap: 7px;
+    margin-top: 16px;
+  }
+
+  .details-meta span,
+  .details-meta strong {
+    min-height: 28px;
+
+    padding: 0 10px;
+
+    font-size: 10px;
+  }
+
+
+  /* =====================================
+     REVIEW
+  ===================================== */
+
+  .details-section {
+    margin-top: 24px;
+    padding-top: 20px;
+  }
+
+  .details-section p {
+    margin-top: 9px;
+
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+
+  /* =====================================
+     ACTIONS
+  ===================================== */
+
+  .book-actions {
+    width: 100%;
+
+    gap: 8px;
+
+    margin-top: 22px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    min-height: 37px;
+
+    padding: 0 14px;
+
+    font-size: 11px;
+  }
+
+
+  /* =====================================
+     PDF
+  ===================================== */
+
+  .pdf-section {
+    margin-top: 23px;
+    padding-top: 20px;
+  }
+
+  .pdf-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 9px;
+  }
+
+  .pdf-actions span {
+    font-size: 11px;
+  }
+
+  .pdf-upload-btn,
+  .read-btn {
+    min-height: 35px;
+
+    padding: 0 13px;
+
+    font-size: 11px;
+  }
+
+
+  /* =====================================
+     LOWER SECTIONS
+  ===================================== */
+
+  .book-details > section:not(.book-details-content) {
+    margin-top: 20px;
+  }
+
+
+  /* =====================================
+     EDIT FORM
+  ===================================== */
+
+  .edit-book-form {
+    width: 100%;
+
+    margin: 0;
+    padding: 23px 18px;
+
+    border-radius: 11px;
+    box-sizing: border-box;
+  }
+
+  .details-header {
+    margin-bottom: 23px;
+  }
+
+  .details-header h1 {
+    margin-top: 6px;
+    font-size: 31px;
+  }
+
+  .edit-book-form form {
+    gap: 15px;
+  }
+
+  .edit-book-form label {
+    font-size: 11px;
+  }
+
+  .edit-book-form input,
+  .edit-book-form select,
+  .edit-book-form textarea {
+    padding: 10px 11px;
+    font-size: 12px;
+  }
+
+  .edit-book-form textarea {
+    min-height: 110px;
+  }
+
+  .edit-actions {
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .save-btn,
+  .cancel-btn {
+    min-height: 37px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+  .book-details {
+    padding: 18px 10px 40px;
+  }
+
+
+  /* HERO */
+
+  .book-details-content {
+    gap: 21px;
+    padding: 17px 14px;
+  }
+
+
+  /* COVER */
+
+  .details-cover {
+    max-width: 190px;
+  }
+
+  .details-cover img,
+  .details-placeholder {
+    width: 190px;
+    height: 285px;
+  }
+
+
+  /* TITLE */
+
+  .details-info h1 {
+    font-size: 29px;
+  }
+
+  .details-info h3 {
+    font-size: 14px;
+  }
+
+
+  /* META */
+
+  .details-meta {
+    margin-top: 14px;
+  }
+
+  .details-meta span,
+  .details-meta strong {
+    min-height: 26px;
+    padding: 0 9px;
+
+    font-size: 9px;
+  }
+
+
+  /* ACTIONS */
+
+  .book-actions {
+    gap: 7px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    min-height: 35px;
+    padding: 0 12px;
+  }
+
+
+  /* PDF */
+
+  .pdf-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+  /* EDIT FORM */
+
+  .edit-book-form {
+    padding: 21px 15px;
+  }
+
+  .details-header h1 {
+    font-size: 29px;
+  }
+
+  .edit-actions {
+    flex-direction: column-reverse;
+  }
+
+  .save-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}

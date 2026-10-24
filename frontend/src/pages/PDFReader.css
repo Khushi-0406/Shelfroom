@@ -1,0 +1,100 @@
+.pdf-reader {
+  min-height: 100vh;
+  background: #eee9df;
+  padding-bottom: 90px;
+}
+
+.reader-header {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  background: #faf7f0;
+  border-bottom: 1px solid #ddd4c5;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.reader-back {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #536059;
+  font-size: 13px;
+}
+
+.reader-title {
+  text-align: center;
+}
+
+.reader-title h1 {
+  font-family: Georgia, serif;
+  color: #203c32;
+  font-size: 22px;
+  margin-top: 3px;
+}
+
+.page-count {
+  color: #777d78;
+  font-size: 12px;
+}
+
+.reader-content {
+  display: flex;
+  justify-content: center;
+  padding: 35px 20px;
+}
+
+.react-pdf__Page {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.reader-controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: #faf7f0;
+  border-top: 1px solid #ddd4c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  z-index: 10;
+}
+
+.reader-controls button {
+  border: none;
+  background: #203c32;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reader-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.reader-controls span {
+  color: #536059;
+  font-size: 13px;
+}
+
+.no-pdf {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.no-pdf h2 {
+  font-family: Georgia, serif;
+  color: #203c32;
+}
+
+.no-pdf p {
+  color: #777d78;
+}

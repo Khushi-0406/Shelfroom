@@ -1,0 +1,417 @@
+/* =========================================
+   SHELVES SECTION
+========================================= */
+
+.shelves-section {
+  margin-top: 35px;
+  padding: 30px;
+  background: #faf7f0;
+  border: 1px solid #ddd4c5;
+  border-radius: 8px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.shelves-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.shelves-header h2 {
+  margin: 6px 0 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 600;
+
+  color: #203c32;
+}
+
+.shelves-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* COUNT */
+
+.shelf-count {
+  min-width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 10px;
+
+  border-radius: 50%;
+
+  background: #e8e1d5;
+  color: #203c32;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* EDIT BUTTON */
+
+.shelves-edit-btn {
+  height: 34px;
+
+  padding: 0 15px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #203c32;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.shelves-edit-btn:hover {
+  background: #294b3e;
+}
+
+
+/* =========================================
+   CURRENT BOOK SHELVES
+========================================= */
+
+.book-shelves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin: 0;
+}
+
+
+/* SHELF CHIP */
+
+.book-shelf {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 8px 12px;
+
+  background: #203c32;
+  color: white;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* REMOVE BUTTON */
+
+.remove-shelf-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: white;
+
+  font-size: 15px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   EDIT ACTIONS
+========================================= */
+
+.shelf-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.shelf-actions button {
+  padding: 3px 7px;
+
+  border: none;
+  border-radius: 4px;
+
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.shelf-actions button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+/* =========================================
+   EDIT SHELF ROW
+========================================= */
+
+.shelf-edit-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  width: 100%;
+}
+
+.shelf-edit-row input {
+  width: 190px;
+
+  padding: 8px 11px;
+
+  border: 1px solid #d4cbbb;
+  border-radius: 6px;
+
+  background: white;
+
+  color: #333;
+
+  outline: none;
+  font-size: 12px;
+}
+
+.shelf-edit-row input:focus {
+  border-color: #203c32;
+}
+
+.shelf-edit-row button {
+  padding: 8px 12px;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.shelf-edit-row button:first-of-type {
+  background: #203c32;
+  color: white;
+}
+
+.shelf-edit-row button:last-of-type {
+  background: #e8e1d5;
+  color: #444;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.shelves-empty {
+  margin: 0;
+
+  color: #777064;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   CREATE SHELF
+========================================= */
+
+.shelf-create-form {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+.shelf-create-form input {
+  flex: 1;
+
+  height: 38px;
+
+  padding: 0 13px;
+
+  border: 1px solid #d4cbbb;
+  border-radius: 6px;
+
+  background: white;
+
+  color: #333;
+
+  outline: none;
+
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.shelf-create-form input:focus {
+  border-color: #203c32;
+}
+
+.shelf-create-form input::placeholder {
+  color: #aaa198;
+}
+
+.shelf-create-form button {
+  height: 38px;
+
+  padding: 0 15px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #203c32;
+  color: white;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.shelf-create-form button:hover {
+  background: #294b3e;
+}
+
+.shelf-create-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   AVAILABLE SHELVES
+========================================= */
+
+.available-shelves {
+  margin-top: 24px;
+  padding-top: 20px;
+
+  border-top: 1px solid #e6ded2;
+}
+
+.available-shelf-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 12px;
+}
+
+.available-shelf {
+  padding: 7px 12px;
+
+  border: 1px solid #cfc5b5;
+  border-radius: 18px;
+
+  background: #fff;
+  color: #444;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.available-shelf:hover {
+  border-color: #203c32;
+  color: #203c32;
+}
+
+.available-shelf.added {
+  background: #e5e1d8;
+  border-color: #d4ccbd;
+
+  color: #999;
+
+  cursor: default;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.form-error {
+  margin-top: 12px;
+
+  color: #a33;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .shelves-section {
+    padding: 22px;
+  }
+
+  .shelves-header {
+    align-items: center;
+  }
+
+  .shelves-header h2 {
+    font-size: 27px;
+  }
+
+  .shelves-header-right {
+    gap: 6px;
+  }
+
+  .shelf-count {
+    min-width: 30px;
+    height: 30px;
+  }
+
+  .shelves-edit-btn {
+    height: 30px;
+    padding: 0 12px;
+  }
+
+  .book-shelf {
+    max-width: 100%;
+  }
+
+  .shelf-create-form {
+    flex-direction: column;
+  }
+
+  .shelf-create-form button {
+    align-self: flex-start;
+  }
+
+  .shelf-edit-row {
+    flex-wrap: wrap;
+  }
+
+  .shelf-edit-row input {
+    width: 100%;
+  }
+}
