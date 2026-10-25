@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom"; // Change BrowserRouter to HashRouter
 import Sidebar from "./components/Sidebar";
 import TopBar from "./components/TopBar";
 import Dashboard from "./pages/Dashboard";
@@ -7,10 +7,9 @@ import BookDetails from "./pages/BookDetails";
 import PDFReader from "./pages/PDFReader";
 import ArrangeLibrary from "./pages/ArrangeLibrary";
 
-
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter> {/* Change BrowserRouter to HashRouter and remove basename */}
       <div className="app">
         <Sidebar />
 
@@ -23,11 +22,10 @@ function App() {
             <Route path="/arrange" element={<ArrangeLibrary />} />
             <Route path="/books/:bookId" element={<BookDetails />} />
             <Route path="/books/:bookId/read" element={<PDFReader />} />
-
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
