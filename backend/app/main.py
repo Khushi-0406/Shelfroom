@@ -58,11 +58,13 @@ logging.basicConfig(
 )
 
 BASE_DIR = Path(__file__).resolve().parent
+MEDIA_DIR = BASE_DIR / "media"
+MEDIA_DIR.mkdir(parents=True, exist_ok=True)
 
 app.mount(
     "/media",
     StaticFiles(
-        directory=BASE_DIR / "media"
+        directory=MEDIA_DIR
     ),
     name="media"
 )
