@@ -24,6 +24,8 @@ from app.schemas.shelves import Shelf
 from app.schemas.tag import Tag
 from app.schemas.bookshelf import BookshelfItem
 
+Base.metadata.create_all(bind=engine)
+
 from app.utils.error_handler import internal_error_handler
 
 import logging
